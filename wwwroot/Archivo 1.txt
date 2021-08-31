@@ -1,0 +1,19 @@
+Proceso iniciado
+Proceso en ejecucción: 31/08/2021 09:26:50
+Proceso en ejecucción: 31/08/2021 09:26:56
+Proceso en ejecucción: 31/08/2021 09:27:01
+Proceso en ejecucción: 31/08/2021 09:27:05
+Proceso en ejecucción: 31/08/2021 09:27:10
+Proceso en ejecucción: 31/08/2021 09:27:15
+Proceso en ejecucción: 31/08/2021 09:27:20
+Proceso en ejecucción: 31/08/2021 09:27:25
+Proceso en ejecucción: 31/08/2021 09:27:30
+Proceso en ejecucción: 31/08/2021 09:27:35
+Proceso en ejecucción: 31/08/2021 09:27:40
+Proceso en ejecucción: 31/08/2021 09:27:45
+Proceso en ejecucción: 31/08/2021 09:27:50
+Proceso en ejecucción: 31/08/2021 09:27:55
+Proceso en ejecucción: 31/08/2021 09:28:00
+Proceso en ejecucción: 31/08/2021 09:28:05
+Proceso en ejecucción: 31/08/2021 09:28:10
+Proceso Finalizado
