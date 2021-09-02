@@ -9,4 +9,6 @@ public class LibroDTO
     [PrimeraLetraMayuscula]
     [StringLength(maximumLength: 250)]
     public string Titulo { get; set; }
+
+    //public List<ComentarioDTO> Comentarios { get; set; }
 }
