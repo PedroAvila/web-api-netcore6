@@ -13,6 +13,25 @@ public class AutoMapperProfiles: Profile
         CreateMap<LibroDTO, Libro>()
             .ForMember(libro => libro.AutoresLibros, opciones => opciones.MapFrom(MapAutoresLibros));
         CreateMap<ComentarioDTO, Comentario>().ReverseMap();
+        CreateMap<Libro, LibroDTO>()
+            .ForMember(x => x.Autores, opciones => opciones.MapFrom(MapLibroDTOAutores));
+    }
+
+    private List<AutorDTO> MapLibroDTOAutores(Libro libro, LibroDTO libroDTO)
+    {
+        var resultado = new List<AutorDTO>();
+
+        if (libro.AutoresLibros == null) { return resultado; };
+        foreach (var autorLibro in libro.AutoresLibros)
+        {
+            resultado.Add(new AutorDTO()
+            {
+                Id = autorLibro.AutorId,
+                Nombre = autorLibro.Autor.Nombre
+            });
+        }
+        
+        return resultado;
     }
 
     private List<AutorLibro> MapAutoresLibros(LibroDTO libroCreacionDTO, Libro libro)
