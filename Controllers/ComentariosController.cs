@@ -33,6 +33,18 @@ public class ComentariosController: ControllerBase
         return mapper.Map<List<ComentarioDTO>>(comentarios);
     }
 
+    [HttpGet("{id:int}", Name = "obtenerComentario")]
+    public async Task<ActionResult<ComentarioDTO>> GetPorId(int id)
+    {
+        var comentario = await context.Comentarios.FirstOrDefaultAsync(comentarioDB => comentarioDB.Id == id);
+        if (comentario == null)
+        {
+            return NotFound();
+        }
+
+        return mapper.Map<ComentarioDTO>(comentario);
+    }
+
 
     [HttpPost]
     public async Task<ActionResult> Post(int libroId, ComentarioDTO comentarioDTO)
@@ -47,6 +59,9 @@ public class ComentariosController: ControllerBase
         comentario.LibroId = libroId;
         context.Add(comentario);
         await context.SaveChangesAsync();
-        return Ok();
+
+        var _comentarioDTO = mapper.Map<ComentarioDTO>(comentario);
+
+        return CreatedAtRoute("obtenerComentario", new { id = comentario.Id, libroId = libroId }, _comentarioDTO);
     }
 }

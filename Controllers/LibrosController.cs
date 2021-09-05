@@ -20,7 +20,7 @@ public class LibrosController: ControllerBase
         this.mapper = mapper;
     }
 
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:int}", Name = "obtenerLibro")]
     public async Task<ActionResult<LibroDTOConAutores>> Get(int id)
     {
         //var libro = await context.Libros.Include(x=>x.Comentarios).FirstOrDefaultAsync(x => x.Id == id);
@@ -61,7 +61,10 @@ public class LibrosController: ControllerBase
 
         context.Add(libro);
         await context.SaveChangesAsync();
-        return Ok();
+
+        var _libroDto = mapper.Map<LibroDTO>(libro);
+
+        return CreatedAtRoute("obtenerLibro", new { id = libro.Id }, _libroDto);
     }
 
 }
