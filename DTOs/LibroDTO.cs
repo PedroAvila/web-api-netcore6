@@ -12,5 +12,5 @@ public class LibroDTO
 
     //public List<ComentarioDTO> Comentarios { get; set; }
     public List<int> AutoresIds { get; set; }
-    public List<AutorDTO> Autores { get; set; }
+    
 }
