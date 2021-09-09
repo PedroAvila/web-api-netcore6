@@ -26,7 +26,7 @@ public class AutoresController : ControllerBase
     [HttpGet("configuraciones")]
     public ActionResult<string> ObtenerConfiguracion()
     {
-        return configuration["connectionStrings:defaultConnection"];
+        return configuration["apellido"];
     }
 
     [HttpGet]               // api/autores
