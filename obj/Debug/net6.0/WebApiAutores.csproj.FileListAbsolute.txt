@@ -7,7 +7,6 @@ D:\Csharp\WebApiAutores\bin\Debug\net6.0\WebApiAutores.exe
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\WebApiAutores.deps.json
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\WebApiAutores.runtimeconfig.json
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\WebApiAutores.dll
-D:\Csharp\WebApiAutores\bin\Debug\net6.0\ref\WebApiAutores.dll
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\WebApiAutores.pdb
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -68,3 +67,5 @@ D:\Csharp\WebApiAutores\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Csharp\WebApiAutores\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Csharp\WebApiAutores\bin\Debug\net6.0\ref\WebApiAutores.dll
+D:\Csharp\WebApiAutores\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
