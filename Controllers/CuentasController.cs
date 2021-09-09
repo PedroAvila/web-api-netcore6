@@ -15,11 +15,13 @@ public class CuentasController: ControllerBase
 {
     private readonly UserManager<IdentityUser> userManager;
     private readonly IConfiguration configuration;
+    private readonly SignInManager<IdentityUser> signInManager;
 
-    public CuentasController(UserManager<IdentityUser> userManager, IConfiguration configuration)
+    public CuentasController(UserManager<IdentityUser> userManager, IConfiguration configuration, SignInManager<IdentityUser> signInManager)
     {
         this.userManager = userManager;
         this.configuration = configuration;
+        this.signInManager = signInManager;
     }
 
     public IConfiguration Configuration { get; }
@@ -37,6 +39,21 @@ public class CuentasController: ControllerBase
         else
         {
             return BadRequest(resultado.Errors);
+        }
+    }
+
+    [HttpPost("login")]
+    public async Task<ActionResult<RespuestaAutenticacion>> Login(CredencialesUsuario credencialesUsuario)
+    {
+        var resultado = await signInManager.PasswordSignInAsync(credencialesUsuario.Email, credencialesUsuario.Password, isPersistent: false, lockoutOnFailure: false);
+
+        if (resultado.Succeeded)
+        {
+            return ConstruirToken(credencialesUsuario);
+        }
+        else
+        {
+            return BadRequest("Login incorrecto");
         }
     }
 
