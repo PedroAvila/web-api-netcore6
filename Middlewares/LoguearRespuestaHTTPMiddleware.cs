@@ -1,4 +1,10 @@
 ﻿
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using System.IO;
+using System.Threading.Tasks;
+
 namespace WebApiAutores.Middlewares;
 
 public static class LoguearRespuestaHTTPMiddlewareExtensions

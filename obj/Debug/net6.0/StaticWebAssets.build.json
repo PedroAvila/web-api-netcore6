@@ -1,14 +1,15 @@
 {
   "Version": 1,
-  "Hash": "0QT8nUtBqSKU89HCuc+wVL3dzx6KYXBdIZ7/FVLlatE=",
+  "Hash": "hFTnwl0q4QozSnozW4iV3jMK96tCByNponTNu4pUQnA=",
   "Source": "WebApiAutores",
   "BasePath": "_content/WebApiAutores",
   "Mode": "Default",
   "ManifestType": "Build",
-  "RelatedManifests": [],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "WebApiAutores\\wwwroot",
+      "Source": "WebApiAutores",
       "ContentRoot": "D:\\Csharp\\WebApiAutores\\wwwroot\\",
       "BasePath": "_content/WebApiAutores",
       "Pattern": "**"

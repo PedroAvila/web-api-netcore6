@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using WebApiAutores.DTOs;
 using WebApiAutores.Entidades;
 
@@ -11,6 +15,7 @@ namespace WebApiAutores.Controllers;
 
 [ApiController]
 [Route("api/autores")]
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class AutoresController : ControllerBase
 {
     private readonly ApplicationDbContext context;
@@ -25,7 +30,7 @@ public class AutoresController : ControllerBase
     }
 
     [HttpGet]               // api/autores
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [AllowAnonymous]
     public async Task<List<AutorDTO>> Get()
     {
         var autores = await context.Autores.ToListAsync();

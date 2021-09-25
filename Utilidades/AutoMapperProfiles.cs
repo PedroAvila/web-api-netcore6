@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using System.Collections.Generic;
 using WebApiAutores.DTOs;
 using WebApiAutores.Entidades;
 

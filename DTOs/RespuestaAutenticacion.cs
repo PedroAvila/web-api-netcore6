@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace WebApiAutores.DTOs;
 public class RespuestaAutenticacion
 {
