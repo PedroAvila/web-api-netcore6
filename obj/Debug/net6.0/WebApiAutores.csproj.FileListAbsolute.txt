@@ -59,10 +59,10 @@ D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.AssemblyInfo.cs
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.csproj.CoreCompileInputs.cache
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.MvcApplicationPartsAssemblyInfo.cs
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.MvcApplicationPartsAssemblyInfo.cache
-D:\Csharp\WebApiAutores\obj\Debug\net6.0\StaticWebAssets.build.json
+D:\Csharp\WebApiAutores\obj\Debug\net6.0\staticwebassets.build.json
+D:\Csharp\WebApiAutores\obj\Debug\net6.0\staticwebassets.development.json
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\scopedcss\bundle\WebApiAutores.styles.css
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.dll
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\ref\WebApiAutores.dll
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.pdb
 D:\Csharp\WebApiAutores\obj\Debug\net6.0\WebApiAutores.genruntimeconfig.cache
-D:\Csharp\WebApiAutores\obj\Debug\net6.0\staticwebassets.development.json
